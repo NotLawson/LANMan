@@ -1,0 +1,16 @@
+{
+    "server_ip":"192.168.86.231",
+    "address":"computer1",
+    "games":{
+        "chrome":{
+            "name":"Google Chrome",
+            "path":"C:/Program Files/Google/Chrome/Application/chrome.exe",
+            "options":""
+        },
+        "undertale":{
+            "name":"Undertale",
+            "path":"C:/GOG Games/Undertale/UNDERTALE.exe",
+            "options":""
+        }
+    }
+}

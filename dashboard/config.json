@@ -1,0 +1,14 @@
+{
+    "server_ip":"192.168.86.231",
+    "layout":[
+        {
+            "id":"table1",
+            "name":"Table 1",
+            "computers":[
+                {"address":"computer1","name":"Computer 1"},
+                {"address":"computer2","name":"Computer 2"},
+                {"address":"computer3","name":"Computer 3"}
+            ]
+        }
+    ]
+}

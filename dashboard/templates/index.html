@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <h1>LANMan Dashboard</h1>
+        <br>
+        {% for group in groups %}
+        <h2>{{group.name}}</h2>
+        <ul>
+            {% for computer in group["computers"] %}
+                <li>{{computer.name}} - {{computer.status["status"]}} {% if computer.status["status"] == "running" %}({{computer.game["name"]}}){% endif %}</li>
+            {% endfor %}
+        </ul>
+        {% endfor %}
+    </body>
+</html>

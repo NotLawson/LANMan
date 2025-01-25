@@ -1,0 +1,22 @@
+services:
+  dashboard:
+    build: ./dashboard
+    # todo: add the rest of the configuration
+
+  mqtt:
+    image: eclipse-mosquitto:2.0.10
+    container_name: mqtt
+    hostname: mqtt
+    restart: on-failure
+    ports:
+        - 1883:1883
+        - 9001:9001
+
+  mumble:
+    image: mumblevoip/mumble-server:<tag>
+    container_name: mumble-server
+    hostname: mumble-server
+    restart: on-failure
+    ports:
+        - 64738:64738
+        - 64738:64738/udp
